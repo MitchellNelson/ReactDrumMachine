@@ -1,3 +1,7 @@
+body{
+	font: 16px helvetica normal;
+}
+
 td{
 	border: solid 1px grey;
 	width:20px;
