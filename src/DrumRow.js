@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import DrumElement from './DrumElement';
 
 class DrumRow extends React.Component {
@@ -9,7 +8,7 @@ class DrumRow extends React.Component {
   renderRowElements(){
     var elements = [];
     for (var i = 0; i < this.props.numElements; i++){
-      elements.push(<DrumElement soundPath={this.props.soundPath} play={this.props.playingIndex === i}/>);
+      elements.push(<DrumElement key={i} soundPath={this.props.soundPath} play={this.props.playingIndex === i}/>);
     }
     return elements;
   }
@@ -17,7 +16,7 @@ class DrumRow extends React.Component {
   render() {
     return (
       <tr>
-        <span>{this.props.name}</span>
+        <td>{this.props.name}</td>
         {this.renderRowElements()}
       </tr>
     );

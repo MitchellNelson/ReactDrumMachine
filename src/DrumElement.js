@@ -1,6 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {Howl, Howler} from 'howler';
+import './audio/Kick1.wav';
+
 
 class DrumElement extends React.Component {
   constructor(props){
@@ -33,7 +34,7 @@ class DrumElement extends React.Component {
 
     return (
       <td onClick={this.handleClick} className={className}>
-        
+         
       </td>
     );
   }

@@ -1,7 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import DrumRow from './DrumRow';
-
+import kick from './audio/Kick1.wav';
+import snare from './audio/Snare1.wav';
+import clap from './audio/Clap1.wav';
+import hihat from './audio/Hi Hat1.wav';
+import openhihat from './audio/Open Hihat.mp3';
+import tamberine from './audio/Tamberine1.wav';
 
 class Drums extends React.Component {
   constructor(props){
@@ -15,19 +19,20 @@ class Drums extends React.Component {
   }
 
 renderTableData(){
-    return (<div>
-    	<DrumRow name='Kick' playingIndex={this.props.playingIndex} numElements={16} soundPath='audio/Kick1.wav'/>
-    	<DrumRow name='Snare' playingIndex={this.props.playingIndex} numElements={16} soundPath='audio/Snare1.wav'/>
-    	<DrumRow name='HiHat' playingIndex={this.props.playingIndex} numElements={16} soundPath='audio/Hi Hat1.wav'/>
-    	</div>);
+    return (<table><tbody>
+    	<DrumRow name='Kick' playingIndex={this.props.playingIndex} numElements={16} soundPath={kick}/>
+    	<DrumRow name='Snare' playingIndex={this.props.playingIndex} numElements={16} soundPath={snare}/>
+    	<DrumRow name='Clap' playingIndex={this.props.playingIndex} numElements={16} soundPath={clap}/>
+      <DrumRow name='HiHat' playingIndex={this.props.playingIndex} numElements={16} soundPath={hihat}/>
+      <DrumRow name='Open HiHat' playingIndex={this.props.playingIndex} numElements={16} soundPath={openhihat}/>
+      <DrumRow name='Tamberine' playingIndex={this.props.playingIndex} numElements={16} soundPath={tamberine}/>
+      </tbody></table>);
 }
 
   render() {
     return (
       <div>
-        <tbody>
           {this.renderTableData()}
-        </tbody>
       </div>
     );
   }
