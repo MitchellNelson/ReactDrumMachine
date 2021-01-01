@@ -1,14 +1,37 @@
 import React from 'react';
 import DrumElement from './DrumElement';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faVolumeUp } from '@fortawesome/free-solid-svg-icons'
+
+const volumeIcon = <FontAwesomeIcon icon={faVolumeUp}/>
 
 class DrumRow extends React.Component {
   constructor(props){
     super(props);
+    this.state = {
+      volumeMode: false
+    }
+    this.handleClick = this.handleClick.bind(this);
   }
-  renderRowElements(){
+
+  handleClick() {
+    this.setState(state => ({
+      volumeMode: !this.state.volumeMode
+    }));
+  }
+
+  renderRowElements() {
     var elements = [];
-    for (var i = 0; i < this.props.numElements; i++){
-      elements.push(<DrumElement key={i} soundPath={this.props.soundPath} play={this.props.playingIndex === i}/>);
+    var numElements = this.props.numMeasures * this.props.beatsPerMeasure;
+    for (var i = 0; i < numElements; i++){
+      var commonProps = {
+        soundPath: this.props.soundPath,
+        playingIndex: this.props.playingIndex,
+        volumeMode: this.state.volumeMode,
+        play: this.props.playingIndex === i,
+        brightness: 100 - ((i % this.props.beatsPerMeasure) * 10)
+      }
+      elements.push(<DrumElement {...commonProps}/>);
     }
     return elements;
   }
@@ -16,7 +39,12 @@ class DrumRow extends React.Component {
   render() {
     return (
       <tr>
-        <td>{this.props.name}</td>
+        <div>
+          <td>
+            {this.props.name}
+            <button onClick={this.handleClick}>{volumeIcon}</button>
+          </td>
+        </div>
         {this.renderRowElements()}
       </tr>
     );
