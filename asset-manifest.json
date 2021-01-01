@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ReactDrumMachine/static/css/main.2b9e9f7c.chunk.css",
-    "main.js": "/ReactDrumMachine/static/js/main.7ec82059.chunk.js",
-    "main.js.map": "/ReactDrumMachine/static/js/main.7ec82059.chunk.js.map",
+    "main.css": "/ReactDrumMachine/static/css/main.8baa33ee.chunk.css",
+    "main.js": "/ReactDrumMachine/static/js/main.58953fd4.chunk.js",
+    "main.js.map": "/ReactDrumMachine/static/js/main.58953fd4.chunk.js.map",
     "runtime-main.js": "/ReactDrumMachine/static/js/runtime-main.6bfe0194.js",
     "runtime-main.js.map": "/ReactDrumMachine/static/js/runtime-main.6bfe0194.js.map",
-    "static/js/2.3af47d79.chunk.js": "/ReactDrumMachine/static/js/2.3af47d79.chunk.js",
-    "static/js/2.3af47d79.chunk.js.map": "/ReactDrumMachine/static/js/2.3af47d79.chunk.js.map",
+    "static/js/2.fc9f2585.chunk.js": "/ReactDrumMachine/static/js/2.fc9f2585.chunk.js",
+    "static/js/2.fc9f2585.chunk.js.map": "/ReactDrumMachine/static/js/2.fc9f2585.chunk.js.map",
     "index.html": "/ReactDrumMachine/index.html",
-    "precache-manifest.0d6f9b4602f7db9f3154880237ec0ae8.js": "/ReactDrumMachine/precache-manifest.0d6f9b4602f7db9f3154880237ec0ae8.js",
+    "precache-manifest.6d8409bb3e2fa10ae89fa759956d96f9.js": "/ReactDrumMachine/precache-manifest.6d8409bb3e2fa10ae89fa759956d96f9.js",
     "service-worker.js": "/ReactDrumMachine/service-worker.js",
-    "static/css/main.2b9e9f7c.chunk.css.map": "/ReactDrumMachine/static/css/main.2b9e9f7c.chunk.css.map",
-    "static/js/2.3af47d79.chunk.js.LICENSE.txt": "/ReactDrumMachine/static/js/2.3af47d79.chunk.js.LICENSE.txt",
+    "static/css/main.8baa33ee.chunk.css.map": "/ReactDrumMachine/static/css/main.8baa33ee.chunk.css.map",
+    "static/js/2.fc9f2585.chunk.js.LICENSE.txt": "/ReactDrumMachine/static/js/2.fc9f2585.chunk.js.LICENSE.txt",
     "static/media/Clap1.wav": "/ReactDrumMachine/static/media/Clap1.45bf1df8.wav",
     "static/media/Hi Hat1.wav": "/ReactDrumMachine/static/media/Hi Hat1.2c3bd2ef.wav",
     "static/media/Kick1.wav": "/ReactDrumMachine/static/media/Kick1.1dfc137c.wav",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6bfe0194.js",
-    "static/js/2.3af47d79.chunk.js",
-    "static/css/main.2b9e9f7c.chunk.css",
-    "static/js/main.7ec82059.chunk.js"
+    "static/js/2.fc9f2585.chunk.js",
+    "static/css/main.8baa33ee.chunk.css",
+    "static/js/main.58953fd4.chunk.js"
   ]
 }
