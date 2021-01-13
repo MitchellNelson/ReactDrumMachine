@@ -29,7 +29,7 @@ input[type=range][orient=vertical]
     margin: 0;
 }
 
-button{
+button {
 	border: none;
 	border-radius: .5rem;
 	background-color: transparent;
@@ -52,6 +52,7 @@ button{
 .isClicked{
 	border-radius: .5rem;
 	background-color: var(--blue);
+	filter: 'brightness(100%)' !important;
 }
 .indicators{
 	height: 1rem;
@@ -64,17 +65,19 @@ button{
   background-color: var(--light-blue);
 }
 
-.selected{
+.selected {
 	border:3px solid green;
 }
 
 #controls {
 	background-color: var(--light-grey);
+	margin-bottom: 1rem;
 }
 
 #controls button {
 	background-color: var(--orange);
 	color: var(--grey);
 	padding: 1rem;
+	margin: .5rem;
 }
 

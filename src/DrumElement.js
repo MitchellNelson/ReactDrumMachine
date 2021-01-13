@@ -25,7 +25,6 @@ class DrumElement extends React.Component {
     });
   }
 
-
   handleClick() {
     if (!this.props.volumeMode){
       this.setState(state => ({
@@ -44,12 +43,12 @@ class DrumElement extends React.Component {
         onChange={this.handleChange}/>);
     }
     var className = 'drumElement notPlaying ';
-    //className += this.props.play ? 'playing ' : 'notPlaying ';
     className += this.state.isClicked ? 'isClicked' : '';
 
     if (this.props.play && this.state.isClicked){
       this.state.sound.play();
     }
+
     return (
       <td style={{filter:'brightness('+ this.props.brightness + '%)'}}  onClick={this.handleClick} className={className}>
         {volumeDisplay}

@@ -54,7 +54,7 @@ function Drums(props){
         <button onClick={togglePlaying}>{playing ? pauseIcon : playIcon}</button>
       </div>
       <table>
-        <tbody>
+        <tbody id='drums-body'>
           <DrumRow name='Kick' {...commonProps} soundPath={kick}/>
           <DrumRow name='Snare' {...commonProps} soundPath={snare}/>
           <DrumRow name='Clap' {...commonProps} soundPath={clap}/>

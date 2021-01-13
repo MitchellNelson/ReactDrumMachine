@@ -1,9 +1,9 @@
 import React from 'react';
 import DrumElement from './DrumElement';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faVolumeUp } from '@fortawesome/free-solid-svg-icons'
+import { faSlidersH } from '@fortawesome/free-solid-svg-icons'
 
-const volumeIcon = <FontAwesomeIcon icon={faVolumeUp}/>
+const volumeIcon = <FontAwesomeIcon icon={faSlidersH}/>
 
 class DrumRow extends React.Component {
   constructor(props){
